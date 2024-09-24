@@ -14,7 +14,7 @@ from typing import Optional
 # Configura l'API di OpenAI
 
 # Carica la tabella dei prodotti
-df = pd.read_csv('Data/catalogo_con_link.csv', sep = ';')
+df = pd.read_csv('catalogo_con_link.csv', sep = ';')
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
